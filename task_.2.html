@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="task_.2.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <title>Dunya Diner</title>
+    <style>
+        body{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+       
+        
+    </style>
+</head>
+<body>
+    
+    <div id="liveDateTime">
+        
+        <div id="greetingContainer">
+        <script>
+    
+        //String methods
+        var food_name = "Pie";
+        food_name.charAt(0);
+        food_name.indexOf("i");
+        console.log(food_name.length);
+        food_name.toUpperCase();
+        food_name.slice(0,2);
+    
+        //Number methods
+        var pi_the_number = 3.141592653589793238462643383279502884197;
+        pi_the_number.toPrecision(4);
+        console.log(pi_the_number.toString());
+        console.log(pi_the_number.valueOf());
+        pi_the_number.toExponential();
+        console.log(pi_the_number.toFixed());
+    
+        //Array methods
+    
+        const types_of_pies = ["<h2> Blueberry pie", " Cherry pie", " Pot pie", " Pumpkin pie", " Cream pie"];
+        types_of_pies.unshift("Pizza pie");
+        types_of_pies.length;
+        types_of_pies.delete;
+        types_of_pies.pop();
+        types_of_pies.push(" Pecan pie");
+        
+    
+        //Date methods
+    
+        date_one = new Date(2024,4,5,9);
+        date_two = new Date("2023-05-23");
+        date_three = new Date(1000);
+        date_four = new Date();
+        
+        let epoch_year = date_three.getFullYear();
+        let epoch_month = date_three.getMonth();
+        let epoch_date = date_three.getDate();
+        let epoch_hours = date_four.getHours();
+       
+        console.log(typeof(epoch_hours))
+        date_two.setYear(2024);
+        
+    
+        //Function methods
+        
+        function greetings(){
+
+            let time;
+            let textColor;
+
+            if (epoch_hours > 5 && epoch_hours < '12' ){
+            time = "Good Morning! We are currently displaying our Morning menu.";
+            document.writeln(time);
+            textColor="red";
+             
+            }
+            else if (epoch_hours > '12' && epoch_hours < '18'){
+            time = "<p> Good Afternoon! We are currently displaying our Morning menu.";
+            document.writeln(time);
+            textColor="Orange";
+            }
+            else if (epoch_hours > 18){
+            time = "Good evening, we currently closed but we will be back tomorrow at 9!. In the meantime...look at all the delicious food we have!";
+            document.writeln(time);
+            textColor="white";
+            }
+        
+        const greetingContainer = document.getElementById("greetingContainer");
+        greetingContainer.textContent =time;
+        greetingContainer.style.color=textColor;
+         }
+
+        greetings();
+
+        </script>
+        </div>
+    </div>
+    <div class="wrapper">
+        <nav class="pageMenu"> 
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Merch</a></li>
+                <li><a href="#"> Testimonials</a></li>
+                <li><a href="#">Account</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="custMenu">
+        <header class="pageName">
+            <h1>DUNYA DINER</h1>
+            <h1>Great food, made to be shared! <br></h1>
+        </header>
+    </section>
+
+    <div class="pizza">
+        <img SRC="MEDIA/PIZZA.PNG">
+    </div>
+
+    <section class="custImages">
+        <div class="customers">
+            <img SRC="MEDIA/CUSTOMERS4.jpeg">
+            <img SRC="MEDIA/CUSTOMERS5.jpeg">
+            <img SRC="MEDIA/CUSTOMERS6.jpEg">
+        </div>
+    </section>
+
+        <section class="custMenu">
+        <div id="morningMenu" class="menuOptions">
+            <div class="menuSection">
+            <h2>MORNING MENU</h2>
+            <h3><strong>MAINS</strong></h3>
+            <p><strong>Food one</strong> $16.50</p>
+            <p><strong>Food two</strong> $16.50</p>
+            <p><strong>Food three</strong> $16.50</p>
+            <p><strong>Food four</strong> $16.50</p>
+            <p><strong>Food five</strong> $16.50</p>
+            </div>
+            
+            <div class="menuSection">
+            <h3><strong>DRINKS</strong></h3>
+            <p><strong>Drink one</strong> $16.50</p>
+            <p><strong>Drink two</strong> $16.50</p>
+            <p><strong>Drink three</strong> $16.50</p>
+            <p><strong>Drink four</strong> $16.50</p>
+            <p><strong>Drink five</strong> $16.50</p>
+            </div>
+
+            <div class="menuSection">
+            <h3>DESSERT</h3>
+            <p><strong>Dessert one</strong> $16.50 </p>
+            <p><strong>Dessert two</strong> $16.50 </p>
+            <p><strong>Dessert three</strong> $16.50 </p>
+            </div>
+
+            <div class="menuSection">
+            <h3>SIDES</h3>
+            <p><strong>Sides one</strong> $16.50 </p>
+            <p><strong>Sides one</strong> $16.50 </p>
+            <p><strong>Sides one</strong> $16.50 </p>
+            <p><strong>Sides one</strong> $16.50 </p>
+            <p><strong>Sides one</strong> $16.50 </p>
+            <p><strong>Sides one</strong> $16.50 </p>
+            </div>
+        </div>
+        <div id="eveningMenu" class="menuOptions">
+            <h2>EVENING MENU</h2>
+            <div class="menuSection">
+            <h3><strong>MAINS</strong></h3>
+            <p><strong>Dinner one</strong> $16.50</p>
+            <p><strong>Dinner two</strong> $16.50</p>
+            <p><strong>Dinner three</strong> $16.50</p>
+            <p><strong>Dinner four</strong> $16.50</p>
+            <p><strong>Dinner five</strong> $16.50</p>
+            </div>
+            
+            <div class="menuSection">
+            <h3><strong>DRINKS</strong></h3>
+            <p><strong>Drink one</strong> $16.50</p>
+            <p><strong>Drink two</strong> $16.50</p>
+            <p><strong>Drink three</strong> $16.50</p>
+            <p><strong>Drink four</strong> $16.50</p>
+            <p><strong>Drink five</strong> $16.50</p>
+            </div>
+
+            <div class="menuSection">
+            <h3>DESSERT</h3>
+            <p><strong>Dessert one</strong> $16.50 </p>
+            <p><strong>Dessert two</strong> $16.50 </p>
+            </div>
+
+            <div class="menuSection">
+            <h3>SIDES</h2>
+            <p><strong>Sides one</strong> $16.50 </p>
+            <p><strong>Sides one</strong> $16.50 </p>
+            <p><strong>Sides one</strong> $16.50 </p>
+            <p><strong>Sides one</strong> $16.50 </p>
+            </div>
+        </div>
+    
+        <div id="menuDisplay">
+            <script>
+                let timeMenu = new Date().getHours();
+                function menuTotal(){
+        
+                    if (timeMenu > 5 && timeMenu < '12' ){
+                    displayMenu("morningMenu");
+                     
+                    }
+                    else if (timeMenu > '12' && timeMenu < '18'){
+                    displayMenu("eveningMenu");
+                    }
+                    else if (timeMenu > 18){
+                    displayMenu("morningMenu");
+                    displayMenu("eveningMenu");
+                    }
+                }
+            
+            function displayMenu(menuName){
+                const menus = document.querySelectorAll("#morningMenu, #eveningMenu");
+                menus.forEach((menu) =>{
+                    menu.style.display = menu.id === menuName ? "block" : "none";
+                })
+            }
+            menuTotal();
+            </script>
+        </div>
+
+        </section>
+    
+</body>
+</html>
